@@ -12,6 +12,7 @@ const port = process.env.PORT || 3000;
 console.log(path.join(__dirname, "../public"));
 app.use(express.static(static_path));
 
+app.set("view engine", "hbs");
 app.get("/", (req, res) => {
   res.send("Hello from Rupesh Bavaskar");
 });
