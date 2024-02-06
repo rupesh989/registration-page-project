@@ -5,9 +5,9 @@ mongoose
     "mongodb://localhost:27017/projectRegistration",
 
     {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      UseCreateIndex: true,
+      // useNewUrlParser: true,
+      // useUnifiedTopology: true,
+      // UseCreateIndex: true,
     }
   )
   .then(() => {

@@ -7,14 +7,15 @@ require("./db/conn");
 
 const port = process.env.PORT || 3000;
 
-// const static_path = path.join(__dirname);
-
-console.log(path.join(__dirname, "../public"));
-app.use(express.static(static_path));
+// const static_path = path.join(__dirname, "../public");
+// app.use(express.static(static_path)); // delete it after public index deleted
+// console.log(path.join(__dirname, "../public"));
 
 app.set("view engine", "hbs");
+
 app.get("/", (req, res) => {
-  res.send("Hello from Rupesh Bavaskar");
+  // res.send("Hello from Rupesh Bavaskar");
+  res.render("index");
 });
 
 app.listen(port, () => {
